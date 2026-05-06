@@ -19,37 +19,46 @@ import java.util.List;
 import java.util.Scanner;
 
 public class App {
-    private static void saveAcccountInFile(List<BankAccount> accounts) {
-        try (PrintWriter writer = new PrintWriter(new FileWriter("accounts.txt"))) {
+    private static void saveAccountsToFile(List<BankAccount> accounts) { // Save accounts to file
+        try (PrintWriter writer = new PrintWriter(new FileWriter("accounts.txt"))) { // Try-with-resources to ensure the
+                                                                                     // writer is closed
             for (BankAccount account : accounts) {
                 writer.println(
-                        account.getAccountNumber() + "," + account.getAccountHolderName() + "," + account.getBalance());
+                        account.getAccountNumber() + "," + account.getAccountHolderName() + "," + account.getBalance()); // Write
+                                                                                                                         // account
+                                                                                                                         // details
+                                                                                                                         // in
+                                                                                                                         // CSV
+                                                                                                                         // format
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            e.printStackTrace(); // Handle any IO exceptions that may occur
         }
     }
 
-    private static List<BankAccount> loadAccountsFromFile() {
-        List<BankAccount> accounts = new ArrayList<>();
-        File file = new File("accounts.txt");
+    private static List<BankAccount> loadAccountsFromFile() { // Load accounts from file
+        List<BankAccount> accounts = new ArrayList<>(); // Initialize an empty list to hold the accounts
+        File file = new File("accounts.txt"); // Create a File object for the accounts file
         if (!file.exists())
             return accounts;
-        try (BufferedReader reader = new BufferedReader(new FileReader(file))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(file))) { // Try-with-resources to ensure the
+                                                                                 // reader is closed
             String line;
             while ((line = reader.readLine()) != null) {
                 String[] parts = line.split(",");
                 accounts.add(new BankAccount(parts[0], parts[1], Double.parseDouble(parts[2])));
-            }
+            } // Read each line from the file, split it by commas, and create a BankAccount
+              // object which is added to the accounts list
         } catch (IOException e) {
-            e.printStackTrace();
+            e.printStackTrace(); // Handle any IO exceptions that may occur
         }
-        return accounts;
+        return accounts; // Return the list of accounts loaded from the file
     }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        List<BankAccount> accounts = loadAccountsFromFile();
+        List<BankAccount> accounts = loadAccountsFromFile(); // load existing accounts from file at the start of the
+                                                             // program
 
         System.out.println("Welcome to the Bank Management System");
         while (true) {
@@ -75,7 +84,7 @@ public class App {
                     sc.nextLine();
                     BankAccount newAccount = new BankAccount(accountNumber, accountHolderName, initialBalance);
                     accounts.add(newAccount);
-                    saveAcccountInFile(accounts);
+                    saveAccountsToFile(accounts);
                     System.out.println("Account created successfully.");
                     break;
                 case 2:
@@ -88,7 +97,7 @@ public class App {
 
                     if (depAcc != null) {
                         depAcc.deposit(depositAmount);
-                        saveAcccountInFile(accounts);
+                        saveAccountsToFile(accounts);
                     } else {
                         System.out.println("Account not found.");
                     }
@@ -103,7 +112,7 @@ public class App {
                     BankAccount wAcc = findAccount(accounts, withdrawAccountNumber);
                     if (wAcc != null) {
                         wAcc.withdraw(withdrawAmount);
-                        saveAcccountInFile(accounts);
+                        saveAccountsToFile(accounts);
                     } else {
                         System.out.println("Account not found.");
                     }
@@ -146,30 +155,32 @@ public class App {
         }
     }
 
-    static class BankAccount {
+    static class BankAccount { // BankAccount class to represent each account
         private String accountNumber;
         private String accountHolderName;
         private double balance;
 
-        public BankAccount(String accountNumber, String accountHolderName, double balance) {
+        public BankAccount(String accountNumber, String accountHolderName, double balance) { // Constructor to
+                                                                                             // initialize the account
+                                                                                             // details
             this.accountNumber = accountNumber;
             this.accountHolderName = accountHolderName;
             this.balance = balance;
         }
 
-        public String getAccountNumber() {
+        public String getAccountNumber() { // Getter for account number
             return accountNumber;
         }
 
-        public String getAccountHolderName() {
+        public String getAccountHolderName() { // Getter for account holder name
             return accountHolderName;
         }
 
-        public double getBalance() {
+        public double getBalance() { // Getter for balance
             return balance;
         }
 
-        public void deposit(double amount) {
+        public void deposit(double amount) { // Method to deposit money into the account
             if (amount > 0) {
                 balance += amount;
                 System.out.println("Deposit successful. New balance: " + balance);
@@ -178,7 +189,7 @@ public class App {
             }
         }
 
-        public void withdraw(double amount) {
+        public void withdraw(double amount) { // Method to withdraw money from the account
             if (amount > 0 && amount <= balance) {
                 balance -= amount;
                 System.out.println("Withdrawal successful. New balance: " + balance);
@@ -188,11 +199,12 @@ public class App {
         }
     }
 
-    public void deleteAccount(List<BankAccount> accounts, String accountNumber) {
+    public void deleteAccount(List<BankAccount> accounts, String accountNumber) { // Method to delete an account based
+                                                                                  // on account number
         BankAccount accountToDelete = findAccount(accounts, accountNumber);
         if (accountToDelete != null) {
             accounts.remove(accountToDelete);
-            saveAcccountInFile(accounts);
+            saveAccountsToFile(accounts);
             System.out.println("Account deleted successfully.");
         } else {
             System.out.println("Account not found.");
@@ -200,13 +212,12 @@ public class App {
     }
 
     private static BankAccount findAccount(List<BankAccount> accounts, String accountNumber) {
+        // Helper method to find an account by account number
         for (BankAccount a : accounts) {
             if (a.getAccountNumber().equals(accountNumber))
                 return a;
         }
         return null;
     }
-
-
 
 }
