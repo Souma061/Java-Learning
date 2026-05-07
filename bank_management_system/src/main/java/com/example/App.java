@@ -24,12 +24,7 @@ public class App {
                                                                                      // writer is closed
             for (BankAccount account : accounts) {
                 writer.println(
-                        account.getAccountNumber() + "," + account.getAccountHolderName() + "," + account.getBalance()); // Write
-                                                                                                                         // account
-                                                                                                                         // details
-                                                                                                                         // in
-                                                                                                                         // CSV
-                                                                                                                         // format
+                        account.getAccountNumber() + "," + account.getAccountHolderName() + "," + account.getBalance());
             }
         } catch (IOException e) {
             e.printStackTrace(); // Handle any IO exceptions that may occur
