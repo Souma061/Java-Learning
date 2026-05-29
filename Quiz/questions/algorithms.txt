@@ -1,0 +1,30 @@
+Which sorting algorithm has the best average-case time complexity?
+A) Bubble Sort|B) Insertion Sort|C) Merge Sort|D) Selection Sort
+3
+What is the time complexity of binary search?
+A) O(n)|B) O(n log n)|C) O(log n)|D) O(1)
+3
+Which algorithm finds the shortest path in a weighted graph?
+A) BFS|B) Dijkstra's Algorithm|C) DFS|D) Kruskal's Algorithm
+2
+What does DFS stand for?
+A) Dynamic Fast Search|B) Depth-First Search|C) Data-First Sort|D) Depth-Fast Sort
+2
+Which algorithm design technique divides a problem into smaller subproblems?
+A) Greedy|B) Divide and Conquer|C) Dynamic Programming|D) Brute Force
+2
+Which sorting algorithm is not comparison-based?
+A) Quick Sort|B) Merge Sort|C) Counting Sort|D) Heap Sort
+3
+What is a greedy algorithm?
+A) Makes the locally optimal choice|B) Tries all possibilities|C) Solves subproblems recursively|D) Uses randomization
+1
+Which algorithm detects cycles in a graph?
+A) BFS|B) DFS|C) Dijkstra|D) Floyd-Warshall
+2
+What does Big O notation describe?
+A) Exact runtime|B) Upper bound of growth|C) Lower bound of growth|D) Average case
+2
+What is the time complexity of quicksort in the worst case?
+A) O(n log n)|B) O(n)|C) O(n²)|D) O(log n)
+3

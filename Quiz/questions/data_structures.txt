@@ -1,0 +1,30 @@
+Which data structure operates on Last-In-First-Out (LIFO) principle?
+A) Queue|B) Stack|C) Array|D) Tree
+2
+What is the time complexity of accessing an element in an array by index?
+A) O(1)|B) O(log n)|C) O(n)|D) O(n²)
+1
+Which data structure uses FIFO ordering?
+A) Stack|B) Queue|C) Heap|D) Graph
+2
+What is a linked list node composed of?
+A) Data only|B) Data and a pointer|C) Two pointers only|D) Index and value
+2
+Which tree has at most two children per node?
+A) Binary Tree|B) Ternary Tree|C) B-Tree|D) Trie
+1
+What is a hash table collision?
+A) Two keys map to the same index|B) Table runs out of memory|C) Key is not found|D) Hash function fails
+1
+Which data structure is used for breadth-first search?
+A) Stack|B) Queue|C) Array|D) Tree
+2
+What is the worst-case time complexity of linear search?
+A) O(1)|B) O(log n)|C) O(n)|D) O(n²)
+3
+Which data structure uses nodes with pointers to left and right?
+A) Stack|B) Queue|C) Binary Tree|D) Hash Table
+3
+What does a deque allow?
+A) Insert at one end only|B) Insert and delete at both ends|C) Random access|D) No deletions
+2

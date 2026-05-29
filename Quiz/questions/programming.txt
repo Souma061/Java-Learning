@@ -1,0 +1,30 @@
+What does the acronym OOP stand for?
+A) Object-Oriented Programming|B) Online Operating Protocol|C) Output-Oriented Process|D) Open Object Protocol
+1
+Which data type is used to store a single character in Java?
+A) String|B) char|C) int|D) byte
+2
+What is the entry point of a Java program?
+A) start()|B) init()|C) main()|D) run()
+3
+Which keyword is used to inherit a class in Java?
+A) implements|B) extends|C) inherits|D) super
+2
+What is the size of an int in Java?
+A) 8 bits|B) 16 bits|C) 32 bits|D) 64 bits
+3
+Which loop executes the block at least once?
+A) for|B) while|C) do-while|D) for-each
+3
+What is the default value of a boolean in Java?
+A) true|B) false|C) 0|D) null
+2
+Which keyword prevents a class from being inherited?
+A) private|B) static|C) final|D) abstract
+3
+What does JVM stand for?
+A) Java Visual Machine|B) Java Virtual Machine|C) Java Variable Manager|D) Java Version Module
+2
+Which collection class allows duplicate elements?
+A) Set|B) Map|C) List|D) Queue
+3

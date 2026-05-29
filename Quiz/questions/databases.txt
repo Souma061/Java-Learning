@@ -1,0 +1,30 @@
+What does SQL stand for?
+A) Simple Query Language|B) Structured Query Language|C) Sequential Query Logic|D) Standard Query Language
+2
+Which keyword is used to retrieve data from a database?
+A) GET|B) RETRIEVE|C) SELECT|D) FETCH
+3
+What is a primary key?
+A) A field that can be NULL|B) A unique identifier for a record|C) A foreign reference|D) An indexed column
+2
+Which clause is used to filter records in SQL?
+A) WHERE|B) FILTER|C) HAVING|D) MATCH
+1
+What is a JOIN used for?
+A) To merge two databases|B) To combine rows from two tables|C) To add a new column|D) To delete records
+2
+What is a foreign key?
+A) A primary key of another table|B) A key from a different database|C) A unique constraint|D) An indexed column
+1
+Which SQL statement is used to update existing records?
+A) MODIFY|B) UPDATE|C) CHANGE|D) ALTER
+2
+What does ACID stand for?
+A) Atomicity, Consistency, Isolation, Durability|B) Auto Commit, Insert, Delete|C) Access, Control, Input, Data|D) Aggregate, Combine, Integrate, Divide
+1
+Which constraint ensures all values in a column are unique?
+A) PRIMARY KEY|B) FOREIGN KEY|C) UNIQUE|D) CHECK
+3
+What is a view in SQL?
+A) A physical table|B) A virtual table based on a query|C) A backup copy|D) An index structure
+2

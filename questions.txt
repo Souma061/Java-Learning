@@ -1,0 +1,7 @@
+
+Write a java program to show factors of number
+Program to Check Prime Number
+Program to Reverse a Number
+Program to Check Palindrome Number
+Program to calculate Sum of Digits in a Number
+Program to Find GCD of Two Numbers

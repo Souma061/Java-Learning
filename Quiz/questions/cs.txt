@@ -1,0 +1,15 @@
+What does CPU stand for?
+A) Central Processing Unit|B) Computer Personal Unit|C) Central Program Utility|D) Core Processing Unit
+1
+What is the binary representation of the decimal number 10?
+A) 1010|B) 1100|C) 1001|D) 1110
+1
+Which programming paradigm uses functions as first-class citizens?
+A) Object-Oriented|B) Functional|C) Procedural|D) Logical
+2
+What is a compiler?
+A) Runs code line by line|B) Translates source code to machine code|C) Manages memory|D) Connects to databases
+2
+What does RAM stand for?
+A) Read Access Memory|B) Random Access Memory|C) Rapid Application Module|D) Run All Memory
+2

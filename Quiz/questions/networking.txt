@@ -1,0 +1,30 @@
+What does IP stand for?
+A) Internet Protocol|B) Internal Process|C) Integrated Program|D) Input Port
+1
+Which protocol is used to send emails?
+A) HTTP|B) FTP|C) SMTP|D) TCP
+3
+What is the default port for HTTP?
+A) 21|B) 25|C) 80|D) 443
+3
+Which layer of the OSI model handles routing?
+A) Physical|B) Data Link|C) Network|D) Transport
+3
+What does DNS stand for?
+A) Digital Network System|B) Domain Name System|C) Data Name Service|D) Distributed Node System
+2
+What is a firewall used for?
+A) Speed up network|B) Block unauthorized access|C) Route packets|D) Assign IP addresses
+2
+Which protocol provides reliable data transfer?
+A) UDP|B) TCP|C) HTTP|D) FTP
+2
+What is the default port for HTTPS?
+A) 80|B) 443|C) 8080|D) 22
+2
+Which device connects different networks together?
+A) Switch|B) Hub|C) Router|D) Modem
+3
+What does MAC stand for in networking?
+A) Machine Access Code|B) Media Access Control|C) Message Authentication Code|D) Multi Access Computer
+2

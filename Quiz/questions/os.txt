@@ -1,0 +1,30 @@
+Which scheduling algorithm gives each process a fixed time slice?
+A) First Come First Serve|B) Shortest Job First|C) Round Robin|D) Priority Scheduling
+3
+What is a deadlock?
+A) Program that runs forever|B) Two or more processes waiting indefinitely|C) A crashed operating system|D) Memory leak
+2
+Which memory management technique uses fixed-size partitions?
+A) Paging|B) Segmentation|C) Fragmentation|D) Compaction
+1
+What is the kernel?
+A) A type of file system|B) The core component of an OS|C) A user interface|D) A device driver
+2
+Which command is used to list files in Linux?
+A) dir|B) list|C) ls|D) show
+3
+What is virtual memory used for?
+A) Store data permanently|B) Extend RAM using disk space|C) Speed up CPU|D) Manage network connections
+2
+Which system call creates a new process in Unix?
+A) exec|B) fork|C) create|D) new
+2
+What is a semaphore?
+A) A hardware device|B) A synchronization primitive|C) A memory allocator|D) A file system
+2
+What is thrashing?
+A) CPU overheating|B) Excessive paging|C) Disk failure|D) Network timeout
+2
+Which file system is native to Linux?
+A) NTFS|B) FAT32|C) ext4|D) HFS+
+3
