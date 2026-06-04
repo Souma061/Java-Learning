@@ -6,7 +6,6 @@
  * a class for products and implement a menu-driven system for user interaction.
  */
 
-
 import java.util.Scanner;
 
 class Product {
@@ -69,6 +68,9 @@ public class Cart {
                     System.out.println("Total Price: ₹" + totalPrice);
                     break;
             }
+            sc.close();
         }
+
     }
+
 }

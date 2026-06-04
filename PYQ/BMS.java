@@ -1,4 +1,3 @@
-package com.example;
 
 // CLI bank management system
 // 1. Create a new account
@@ -18,7 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class App {
+public class BMS {
     private static void saveAccountsToFile(List<BankAccount> accounts) { // Save accounts to file
         try (PrintWriter writer = new PrintWriter(new FileWriter("accounts.txt"))) { // Try-with-resources to ensure the
                                                                                      // writer is closed
@@ -138,7 +137,7 @@ public class App {
                 case 6:
                     System.out.print("Enter account number to delete: ");
                     String deleteAccountNumber = sc.nextLine();
-                    new App().deleteAccount(accounts, deleteAccountNumber);
+                    new BMS().deleteAccount(accounts, deleteAccountNumber);
                     break;
                 case 7:
                     System.out.println("Thank you for using the Bank Management System. Goodbye!");
