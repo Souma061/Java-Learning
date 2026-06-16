@@ -1,0 +1,3 @@
+Hello, this is a sample text file.
+This file is created for demonstrating file handling in Java.
+You can read this file and display its content using the program.
