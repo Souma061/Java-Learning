@@ -11,20 +11,17 @@ public class thirtySeven {
         c.sound();
     }
 }
-
 class Animal {
     void sound() {
         System.out.println("This animal makes a sound.");
     }
 }
-
 class Dog extends Animal {
     @Override
     void sound() {
         System.out.println("Dog barks: Woof Woof");
     }
 }
-
 class Cat extends Animal {
     @Override
     void sound() {

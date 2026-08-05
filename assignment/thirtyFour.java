@@ -8,7 +8,6 @@ public class thirtyFour {
         dog.bark();
     }
 }
-
 class Animal {
 
     void eat() {
@@ -17,9 +16,7 @@ class Animal {
     void sleep() {
         System.out.println("Animal is sleeping");
     }
-}
-
-class Dog extends Animal {
+}class Dog extends Animal {
     void bark() {
         System.out.println("Dog is barking");
     }
