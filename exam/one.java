@@ -10,13 +10,18 @@ class Animal {
         this.age = age;
         this.name = name;
     }
-
+    public void setName(String name) {
+        this.name = name;
+    }
     public void setAge(int age) {
         this.age = age;
     }
 
     public int getAge() {
         return age;
+    }
+    public String getName() {
+        return name;
     }
 }
 
@@ -37,7 +42,9 @@ public class one {
         dog.eat(); // Inherited method from Animal class
         dog.bark(); // Method from Dog class
         // dog.age = 5; // Error: age has private access in Animal
+        dog.setName("Buddy");
         dog.setAge(5);
+        System.out.println("Dog's name: " + dog.getName());
         System.out.println("Dog's age: " + dog.getAge());
     }
 }
